@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bombisz.interactivehome.ButtFormFragment"
+    tools:showIn="@layout/activity_butt_form">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="299dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Type id number of button"
+            android:inputType="textPersonName"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/selectOneHint"
+            />
+
+        <EditText
+            android:id="@+id/socketNr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter number of socket"
+            android:inputType="textPersonName"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/next"
+                android:layout_alignBottom="@+id/next"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:onClick="onClickDeleteButton"
+                android:text="Delete"/>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:onClick="onClickNextButton"
+                android:text="Next"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

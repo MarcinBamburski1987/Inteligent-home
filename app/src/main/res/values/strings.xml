@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Interactive home</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_butt_form">ButtForm</string>
+    <string name="selectOneHint">Choose type of button</string>
+    <string-array name="typesInSpinner">
+        <item>Choose type of button from the list</item>
+        <item>Type one</item>
+        <item>Type two</item>
+        <item>Type three</item>
+    </string-array>
+</resources>

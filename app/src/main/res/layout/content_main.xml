@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bombisz.interactivehome.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <TableLayout
+        android:id="@+id/tableButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/redLedId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="redLed"
+                android:text="Red"/>
+
+            <Button
+                android:id="@+id/greenLedId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="greenLed"
+                android:text="Green"/>
+
+            <Button
+                android:id="@+id/blueLedId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="blueLed"
+                android:text="Blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/openServo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="openServo"
+                android:text="Open"/>
+            <Button
+                android:id="@+id/standByServo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stand by"/>
+
+            <Button
+                android:id="@+id/closeServo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"/>
+        </LinearLayout>
+
+    </TableLayout>
+
+</android.support.v4.widget.NestedScrollView>
